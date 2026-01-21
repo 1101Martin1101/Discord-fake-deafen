@@ -5,6 +5,7 @@
     const THROTTLE_TIME = 10000; // Throttle fake deafen - minimum 10s between each modification
 
     var originalSend = WebSocket.prototype.send;
+    window.__originalWebSocketSend = originalSend; // Store for disabling later
     WebSocket.prototype.send = function(data) {
         if (Object.prototype.toString.call(data) === "[object ArrayBuffer]") {
             let decodedData = text.decode(data);
