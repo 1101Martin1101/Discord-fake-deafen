@@ -25,6 +25,14 @@ Steps:
 5. You should see: `found mute/deafen`
 6. After confirmation, you can safely unmute/undeafen
 
+### Disabling the Script
+
+To disable the fake deafen script:
+
+1. Open Discord DevTools Console again (`F12` → **Console**)
+2. Paste the contents of `disable.js` and press Enter
+3. You'll see: `Discord Fake Deafen: DISABLED`
+4. The original WebSocket behavior is now restored
 
 ## How It Works
 
